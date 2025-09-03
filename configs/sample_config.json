@@ -1,1 +1,11 @@
+{
+  "source_path": "/mnt/raw/flight_bookings/",
+  "bronze_path": "/mnt/delta/bronze/flight_bookings/",
+  "silver_path": "/mnt/delta/silver/flight_bookings/",
+  "gold_path": "/mnt/delta/gold/flight_bookings/",
+  "keycols": ["booking_id"],
+  "cdc_col": "last_updated_ts",
+  "backdated_refresh": false,
+  "partition_by": ["event_date"]
+}
 
